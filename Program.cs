@@ -147,47 +147,68 @@ Console.WriteLine("Esercizio Snack 0");
 
 //SNACK 7
 
-Console.WriteLine("");
-Console.WriteLine("Snack 7");
+//Console.WriteLine("");
+//Console.WriteLine("Snack 7");
 
-int[] numbersSnack7;
-numbersSnack7 = new int[6];
+//int[] numbersSnack7;
+//numbersSnack7 = new int[6];
 
-Console.WriteLine("Inserisci 6 numeri");
+//Console.WriteLine("Inserisci 6 numeri");
 
-for (int i = 0; i < numbersSnack7.Length; i++)
-{
-    int n = 0;
+//for (int i = 0; i < numbersSnack7.Length; i++)
+//{
+//    int n = 0;
 
 
-    Console.WriteLine("Inserisci il " + (i + 1) + "° numero");
-    n = Int32.Parse(Console.ReadLine());
-    if (n % 2 != 0)
-    {
-        numbersSnack7[i] = n;
-    }
+//    Console.WriteLine("Inserisci il " + (i + 1) + "° numero");
+//    n = Int32.Parse(Console.ReadLine());
+//    if (n % 2 != 0)
+//    {
+//        numbersSnack7[i] = n;
+//    }
 
-    Console.WriteLine(numbersSnack7[i]);
-}
+//    Console.WriteLine(numbersSnack7[i]);
+//}
 
 
 //SNACK 8
 
+//Console.WriteLine("");
+//Console.WriteLine("Snack 8");
+
+
+//int[] numbersSnack8 = { 5, 8, 3, 7, 24, 33, 12};
+
+//int sumSnack8 = 0;
+//for (int i = 0; i < numbersSnack8.Length; i++)
+//{
+//    if(i % 2 != 0 )
+//    {
+//        sumSnack8 += numbersSnack8[i];
+//    }
+//}
+
+//Console.WriteLine("La somma dei numeri in posizioni dispari è " + sumSnack8);
+
+
+//SNACK 9
+
 Console.WriteLine("");
-Console.WriteLine("Snack 8");
+Console.WriteLine("Snack 9");
 
 
-int[] numbersSnack8 = { 5, 8, 3, 7, 24, 33, 12};
+int[] numbersSnack9;
+numbersSnack9 = new int[50];
+int index = 0;
 
-int sumSnack8 = 0;
-for (int i = 0; i < numbersSnack8.Length; i++)
+int sumSnack9 = 0;
+
+while(sumSnack9 < 50)
 {
-    if(i % 2 != 0 )
-    {
-        sumSnack8 += numbersSnack8[i];
-    }
+    Console.WriteLine("Scrivi un numeno");
+    numbersSnack9[index] = Int32.Parse(Console.ReadLine());
+    sumSnack9 += numbersSnack9[index];
+    index++;
 }
 
-Console.WriteLine("La somma dei numeri in posizioni dispari è " + sumSnack8);
-
-
+Console.WriteLine(sumSnack9);
