@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System;
+
 Console.WriteLine("Esercizio Snack 0");
 
 //SNACK 1
@@ -193,22 +195,53 @@ Console.WriteLine("Esercizio Snack 0");
 
 //SNACK 9
 
+//Console.WriteLine("");
+//Console.WriteLine("Snack 9");
+
+
+//int[] numbersSnack9;
+//numbersSnack9 = new int[50];
+//int index = 0;
+
+//int sumSnack9 = 0;
+
+//while(sumSnack9 < 50)
+//{
+//    Console.WriteLine("Scrivi un numeno");
+//    numbersSnack9[index] = Int32.Parse(Console.ReadLine());
+//    sumSnack9 += numbersSnack9[index];
+//    index++;
+//}
+
+//Console.WriteLine(sumSnack9);
+
+
+//SNACK 10
+
 Console.WriteLine("");
-Console.WriteLine("Snack 9");
+Console.WriteLine("Snack 10");
+
+Random rand = new Random();
+
+int numberUser10 = 0;
 
 
-int[] numbersSnack9;
-numbersSnack9 = new int[50];
-int index = 0;
+numberUser10 = Int32.Parse(Console.ReadLine());
 
-int sumSnack9 = 0;
-
-while(sumSnack9 < 50)
+for (int i = 0; i < numberUser10; i++)
 {
-    Console.WriteLine("Scrivi un numeno");
-    numbersSnack9[index] = Int32.Parse(Console.ReadLine());
-    sumSnack9 += numbersSnack9[index];
-    index++;
+    Console.WriteLine(" ");
+    Console.WriteLine((i + 1) + "° Array");
+
+    int[] numbersSnack10;
+    numbersSnack10 = new int[10];
+    
+    for (int j = 0; j < numbersSnack10.Length; j++)
+    {
+        numbersSnack10[j] = rand.Next(0, 101);
+        Console.WriteLine(numbersSnack10[j]);
+
+    }
+   
 }
 
-Console.WriteLine(sumSnack9);
