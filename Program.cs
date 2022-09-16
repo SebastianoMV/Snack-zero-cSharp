@@ -175,9 +175,9 @@ for (int i = 0; i < numbersSnack7.Length; i++)
         numbersSnack7[arrayLength] = n;
         arrayLength++;
     }
-
-    Console.WriteLine(numbersSnack7[i]);
 }
+
+Console.WriteLine("[{0}]", string.Join(", ", numbersSnack7));
 
 
 //SNACK 8
