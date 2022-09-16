@@ -98,7 +98,7 @@ int numberSnack5 = 0;
 
 Console.WriteLine("Inserisci un numero");
 
-numberSnack5 = Int32.Parse(Console.ReadLine()); 
+numberSnack5 = Int32.Parse(Console.ReadLine());
 
 if (numberSnack5 % 2 == 0)
 {
@@ -107,4 +107,33 @@ if (numberSnack5 % 2 == 0)
 else
 {
     Console.WriteLine("Il numero " + numberSnack5 + " non è pari, il numero " + (numberSnack5 + 1) + " è pari.");
+}
+
+
+//SNACK 6
+
+string[] partyGatsby = { "Myrtle Wilson", "Daisy Buchanan", "Tom Buchanan", "Meyer Wolfsheim", "Jordan Baker", "Jay Gatsby" };
+
+bool flagInvite = false;
+
+string personSnack6 = "";
+
+Console.WriteLine("Inserisci nome e cognome");
+personSnack6 = Console.ReadLine();
+
+for (int i = 0; i < partyGatsby.Length; i++)
+{
+    if(partyGatsby[i] == personSnack6)
+    {
+        flagInvite = true;
+    }
+}
+
+if (flagInvite)
+{
+    Console.WriteLine("Benvenuto/a " + personSnack6 + ", lei è in lista, può partecipare al party");
+}
+else
+{
+    Console.WriteLine(personSnack6 + " lei non è invitato/a alla festa");
 }
