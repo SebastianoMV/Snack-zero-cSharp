@@ -92,3 +92,19 @@ for (int i = 2; i <= 10; i++)
 Console.WriteLine("La somma dei numeri da 2 a 10 è " + sumSnack4);
 
 
+//SNACK 5
+
+int numberSnack5 = 0;
+
+Console.WriteLine("Inserisci un numero");
+
+numberSnack5 = Int32.Parse(Console.ReadLine()); 
+
+if (numberSnack5 % 2 == 0)
+{
+    Console.WriteLine("Il numero " + numberSnack5 + " è pari");
+}
+else
+{
+    Console.WriteLine("Il numero " + numberSnack5 + " non è pari, il numero " + (numberSnack5 + 1) + " è pari.");
+}
