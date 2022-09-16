@@ -92,7 +92,7 @@ for (int i = 2; i <= 10; i++)
     sumSnack4 += i;
 }
 
-average = sumSnack4 / 10;
+average = sumSnack4 / 9;
 
 Console.WriteLine("La somma dei numeri da 2 a 10 è " + sumSnack4);
 Console.WriteLine("La media dei numeri da 2 a 10 è " + average);
