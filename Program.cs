@@ -150,7 +150,8 @@ Console.WriteLine("Esercizio Snack 0");
 Console.WriteLine("");
 Console.WriteLine("Snack 7");
 
-int[] numbersSnack7 = {0 , 0, 0, 0, 0, 0 };
+int[] numbersSnack7;
+numbersSnack7 = new int[6];
 
 Console.WriteLine("Inserisci 6 numeri");
 
@@ -158,7 +159,7 @@ for (int i = 0; i < numbersSnack7.Length; i++)
 {
     int n = 0;
 
-    
+
     Console.WriteLine("Inserisci il " + (i + 1) + "° numero");
     n = Int32.Parse(Console.ReadLine());
     if (n % 2 != 0)
@@ -168,4 +169,25 @@ for (int i = 0; i < numbersSnack7.Length; i++)
 
     Console.WriteLine(numbersSnack7[i]);
 }
+
+
+//SNACK 8
+
+Console.WriteLine("");
+Console.WriteLine("Snack 8");
+
+
+int[] numbersSnack8 = { 5, 8, 3, 7, 24, 33, 12};
+
+int sumSnack8 = 0;
+for (int i = 0; i < numbersSnack8.Length; i++)
+{
+    if(i % 2 != 0 )
+    {
+        sumSnack8 += numbersSnack8[i];
+    }
+}
+
+Console.WriteLine("La somma dei numeri in posizioni dispari è " + sumSnack8);
+
 
